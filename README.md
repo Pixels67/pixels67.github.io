@@ -8,4 +8,4 @@ That's it I guess.
 \
 \
 **Discord:** pixels671\
-**YouTube:** https://www.youtube.com/@Pixels.67 (I don't post anything on it yet...)
+**YouTube:** <a href="https://www.youtube.com/@Pixels.67" target="_blank">https://www.youtube.com/@Pixels.67</a> (I don't post anything on it yet...)
