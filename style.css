@@ -1,0 +1,48 @@
+body {
+    background-color: #101510;
+}
+
+h2 {
+    color: lightgreen;
+    font-family: "FiraCode Nerd Font Mono", serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+h3 {
+    color: #FFAA22;
+    font-family: "FiraCode Nerd Font Mono", serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+h4 {
+    color: #CC5522;
+    font-family: "FiraCode Nerd Font Mono", serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+p {
+    color: #EEFFEE;
+    font-family: "FiraCode Nerd Font Mono", serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+a {
+    color: #EEFFEE;
+    font-family: "FiraCode Nerd Font Mono", serif;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-color: #22AAFF;
+    text-decoration-thickness: 2px;
+    text-align: center;
+}
