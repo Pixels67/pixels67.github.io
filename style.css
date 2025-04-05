@@ -27,16 +27,18 @@ h4 {
 }
 
 img {
+    transform: scale(0.75);
     display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 50%;
     border: 6px solid #EEDDAA;
     transition: transform .2s, border .3s;
+    image-rendering: pixelated;
 }
 
 img:hover {
-    transform: scale(1.25);
+    transform: scale(1);
     border: 3px solid #FFAA88;
 }
 
