@@ -30,6 +30,14 @@ h3 {
     user-select: none;
 }
 
+h3::before {
+    content: "- ";
+}
+
+h3::after {
+    content: " -";
+}
+
 h4 {
     color: #EEDDAA;
     font-family: "FiraCode Font", serif;
@@ -45,13 +53,18 @@ img {
     margin-right: auto;
     border-radius: 50%;
     border: 6px solid #EEDDAA;
-    transition: transform .2s, border .3s;
+    transition: all .2s;
     image-rendering: pixelated;
 }
 
 img:hover {
     transform: scale(1);
     border: 3px solid #FFAA88;
+}
+
+img:active {
+    transform: scale(1);
+    border: 16px solid #AACCAA;
 }
 
 p {
@@ -70,13 +83,26 @@ a {
     text-decoration-thickness: 2px;
     text-align: center;
     user-select: none;
-    transition: font-size .1s;
+    transition: all .1s;
 }
 
 a:hover {
-    color: #22AAFF;
+    text-decoration-color: #AACCAA;
     font-size: 18px;
     font-weight: bold;
+}
+
+a:active {
+    color: #AACCAA;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+li {
+    color: #EEFFEE;
+    font-family: "FiraCode Font", serif;
+    font-size: 16px;
+    user-select: none;
 }
 
 .panel {
