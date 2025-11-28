@@ -29,6 +29,10 @@ p {
     font-size: 20px;
 }
 
+a {
+    color: #639bff;
+}
+
 i {
     color: rgb(253, 233, 205);
     scale: 2.0;
