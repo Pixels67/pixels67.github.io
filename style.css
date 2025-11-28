@@ -57,6 +57,143 @@ i {
     animation: fade_in 1s ease 0.4s backwards;
 }
 
+@keyframes changeText {
+    0%, 10% {
+        content: 'char *';
+    }
+    11% {
+        content: 'char ';
+    }
+    12% {
+        content: 'cha ';
+    }
+    13% {
+        content: 'ch ';
+    }
+    14% {
+        content: 'c ';
+    }
+    15% {
+        content: ' ';
+    }
+    16% {
+        content: 's ';
+    }
+    17% {
+        content: 'st ';
+    }
+    18% {
+        content: 'std ';
+    }
+    19% {
+        content: 'std:: ';
+    }
+    20% {
+        content: 'std::s ';
+    }
+    21% {
+        content: 'std::st ';
+    }
+    22% {
+        content: 'std::str ';
+    }
+    23% {
+        content: 'std::stri ';
+    }
+    24% {
+        content: 'std::strin ';
+    }
+    25%, 44% {
+        content: 'std::string ';
+    }
+    45% {
+        content: 'std::strin ';
+    }
+    46% {
+        content: 'std::stri ';
+    }
+    47% {
+        content: 'std::str ';
+    }
+    48% {
+        content: 'std::st ';
+    }
+    49% {
+        content: 'std::s ';
+    }
+    50% {
+        content: 'std:: ';
+    }
+    51% {
+        content: 'std ';
+    }
+    52% {
+        content: 'st ';
+    }
+    53% {
+        content: 's ';
+    }
+    54% {
+        content: ' ';
+    }
+    55% {
+        content: 'S ';
+    }
+    56% {
+        content: 'St ';
+    }
+    57% {
+        content: 'Str ';
+    }
+    58% {
+        content: 'Stri ';
+    }
+    59% {
+        content: 'Strin ';
+    }
+    60%, 79% {
+        content: 'String ';
+    }
+    80% {
+        content: 'Strin ';
+    }
+    81% {
+        content: 'Stri ';
+    }
+    82% {
+        content: 'Str ';
+    }
+    83% {
+        content: 'St ';
+    }
+    84% {
+        content: 'S ';
+    }
+    85% {
+        content: ' ';
+    }
+    86% {
+        content: 'c ';
+    }
+    87% {
+        content: 'ch ';
+    }
+    88% {
+        content: 'cha ';
+    }
+    89% {
+        content: 'char ';
+    }
+    90% {
+        content: 'char *';
+    }
+}
+
+.code-text::before {
+    content: 'char *';
+    animation: changeText 6s infinite;
+}
+
 .round_image {
     transition: transform 0.3s ease, border 0.3s ease;
 }
