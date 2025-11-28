@@ -1,7 +1,8 @@
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #222034;
+    background-color: #11101C;
     color: rgb(253, 233, 205);
+    margin: 0;
 }
 
 h1 {
@@ -97,7 +98,7 @@ i {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 0 0 50px;
+    margin: 0;
     padding-bottom: 100px;
     font-family: 'Inter', sans-serif;
     background-color: #11101C;
@@ -111,16 +112,16 @@ i {
     gap: 80px;
 }
 
+.page {
+    padding: 50px 15% 100px;
+    background-color: #222034;
+}
+
 .about {
-    padding-left: 15%;
-    padding-right: 15%;
     margin-bottom: 60px;
-    backdrop-filter: blur(20px);
 }
 
 .projects {
-    padding-left: 15%;
-    padding-right: 15%;
     margin-bottom: 60px;
 }
 
