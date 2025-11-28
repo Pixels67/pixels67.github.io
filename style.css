@@ -1,0 +1,146 @@
+body {
+    font-family: sans-serif;
+    background-color: #222034;
+    color: rgb(253, 233, 205);
+}
+
+h1 {
+    text-align: center;
+    font-size: 64px;
+    margin-top: 65px;
+    margin-bottom: 100px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 20px;
+}
+
+i {
+    color: rgb(253, 233, 205);
+    scale: 2.0;
+}
+
+@keyframes fade_in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.splash {
+    animation: fade_in 1s ease;
+}
+
+.about {
+    animation: fade_in 1s ease 0.2s backwards;
+}
+
+.projects {
+    animation: fade_in 1s ease 0.4s backwards;
+}
+
+.round_image {
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.round_image:hover {
+    transform: scale(1.05);
+    border: 5px solid #639bff;
+}
+
+.button {
+    transition: transform 0.3s ease, opacity 0.3s ease, scale 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    opacity: 0.8;
+    scale: 1.2;
+    color: #639bff;
+}
+
+.button i {
+    transition: color 0.3s ease;
+}
+
+.button:hover i {
+    color: #639bff;
+}
+
+.round_image {
+    display: block;
+    margin: 60px auto 0;
+    border-radius: 50%;
+    border: 5px solid rgb(253, 233, 205);
+}
+
+.splash {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 0 50px;
+    padding-bottom: 100px;
+    font-family: monospace;
+    background-color: #11101C;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.about {
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 60px;
+    backdrop-filter: blur(20px);
+}
+
+.projects {
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: 60px;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    background-color: #12111D;
+    border-radius: 6px;
+    padding: 20px 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.project {
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
