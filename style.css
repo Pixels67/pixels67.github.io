@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: #222034;
     color: rgb(253, 233, 205);
 }
@@ -99,7 +99,7 @@ i {
     flex-direction: column;
     margin: 0 0 50px;
     padding-bottom: 100px;
-    font-family: monospace;
+    font-family: 'Inter', sans-serif;
     background-color: #11101C;
 }
 
