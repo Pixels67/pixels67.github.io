@@ -146,37 +146,37 @@ i {
         content: ' ';
     }
     55% {
-        content: 'S ';
+        content: 's ';
     }
     56% {
-        content: 'St ';
+        content: 'st ';
     }
     57% {
-        content: 'Str ';
+        content: 'str ';
     }
     58% {
-        content: 'Stri ';
+        content: 'stri ';
     }
     59% {
-        content: 'Strin ';
+        content: 'strin ';
     }
     60%, 79% {
-        content: 'String ';
+        content: 'string ';
     }
     80% {
-        content: 'Strin ';
+        content: 'strin ';
     }
     81% {
-        content: 'Stri ';
+        content: 'stri ';
     }
     82% {
-        content: 'Str ';
+        content: 'str ';
     }
     83% {
-        content: 'St ';
+        content: 'st ';
     }
     84% {
-        content: 'S ';
+        content: 's ';
     }
     85% {
         content: ' ';
@@ -277,6 +277,7 @@ i {
     filter: blur(4px);
     object-fit: cover;
     z-index: -1;
+    will-change: filter, transform;
 }
 
 .about {
