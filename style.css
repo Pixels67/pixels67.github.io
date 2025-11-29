@@ -321,6 +321,32 @@ i {
     padding: 40px 80px 0 80px;
 }
 
+.column-card-blue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: rgba(240, 220, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 40px 80px 0 80px;
+}
+
+.column-card-purple {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: rgba(240, 220, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 40px 80px 0 80px;
+}
+
 .card-buttons {
     display: flex;
     justify-content: center;
@@ -330,22 +356,54 @@ i {
     margin-right: 40px;
 }
 
-.row-card, .column-card {
+.row-card, .column-card-blue {
     transition: all 0.3s ease;
     position: relative;
 }
 
-.row-card:hover, .column-card:hover {
+.row-card:hover, .column-card-blue:hover {
     transform: translateY(-6px) scale(1.02);
     box-shadow: 0 15px 35px rgba(100, 150, 255, 0.3);
     border: 1px solid rgba(99, 155, 255, 0.3);
 }
 
-.column-card img, .row-card img {
+.column-card-blue img, .row-card img {
     transition: all 0.3s ease;
 }
 
-.column-card:hover img, .row-card:hover img {
+.column-card-blue:hover img, .row-card:hover img {
     transform: scale(1.1);
     filter: drop-shadow(0 0 15px rgba(100, 150, 255, 0.3));
+}
+
+.column-card, .column-card img {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.column-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.column-card:hover img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2));
+}
+
+.column-card-purple, .column-card-purple img {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.column-card-purple:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(180, 120, 255, 0.2);
+    border: 1px solid rgba(180, 120, 255, 0.3);
+}
+
+.column-card-purple:hover img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px rgba(180, 120, 255, 0.2));
 }
