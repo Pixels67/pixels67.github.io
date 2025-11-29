@@ -17,16 +17,6 @@ h2 {
     font-size: 48px;
 }
 
-h2::after {
-    content: '';
-    display: block;
-    width: 100px;
-    height: 4px;
-    background: #639bff;
-    margin: 15px auto 0;
-    border-radius: 2px;
-}
-
 h3 {
     font-size: 36px;
 }
@@ -68,8 +58,12 @@ i {
     animation: fade_in 1s ease 0.2s backwards;
 }
 
-.projects {
+.skills {
     animation: fade_in 1s ease 0.4s backwards;
+}
+
+.projects {
+    animation: fade_in 1s ease 0.6s backwards;
 }
 
 @keyframes change_text {
