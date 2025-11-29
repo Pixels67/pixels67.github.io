@@ -17,6 +17,16 @@ h2 {
     font-size: 48px;
 }
 
+h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #639bff;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
 h3 {
     font-size: 36px;
 }
@@ -62,7 +72,7 @@ i {
     animation: fade_in 1s ease 0.4s backwards;
 }
 
-@keyframes changeText {
+@keyframes change_text {
     0%, 10% {
         content: 'char *';
     }
@@ -196,7 +206,7 @@ i {
 
 .code-text::before {
     content: 'char *';
-    animation: changeText 6s infinite;
+    animation: change_text 6s infinite;
 }
 
 .round_image {
@@ -209,7 +219,7 @@ i {
 }
 
 .button {
-    transition: transform 0.3s ease, opacity 0.3s ease, scale 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .button:hover {
@@ -217,6 +227,7 @@ i {
     opacity: 0.8;
     scale: 1.2;
     color: #639bff;
+    filter: drop-shadow(0 0 10px rgba(60, 100, 200, 0.6));
 }
 
 .button i {
@@ -264,27 +275,59 @@ i {
 }
 
 .projects {
-    margin-bottom: 60px;
+    margin-bottom: 0;
 }
 
-.project {
+.skills {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.languages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.row-card {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 80px;
-    background-color: #12111D;
-    border-radius: 6px;
+    background: rgba(240, 220, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 200, 255, 0.1);
+    border-radius: 8px;
     padding: 20px 40px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.project {
-    transition: transform 0.3s ease;
+.column-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: rgba(240, 220, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 40px 80px 0 80px;
 }
 
-.project-buttons {
+.card-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -293,6 +336,22 @@ i {
     margin-right: 40px;
 }
 
-.project:hover {
-    transform: scale(1.02);
+.row-card, .column-card {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.row-card:hover, .column-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(100, 150, 255, 0.3);
+    border: 1px solid rgba(99, 155, 255, 0.3);
+}
+
+.column-card img, .row-card img {
+    transition: all 0.3s ease;
+}
+
+.column-card:hover img, .row-card:hover img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px rgba(100, 150, 255, 0.3));
 }
