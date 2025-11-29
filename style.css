@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #11101C;
+    background-color: #0A0A0A;
     color: rgb(253, 233, 205);
     margin: 0;
 }
@@ -221,7 +221,6 @@ i {
     opacity: 0.8;
     scale: 1.2;
     color: #639bff;
-    filter: drop-shadow(0 0 10px rgba(60, 100, 200, 0.6));
 }
 
 .button i {
@@ -248,7 +247,7 @@ i {
     margin: 0;
     padding-bottom: 100px;
     font-family: 'Inter', sans-serif;
-    background-color: #11101C;
+    background-color: #0A0A0A;
 }
 
 .buttons {
@@ -261,7 +260,22 @@ i {
 
 .page {
     padding: 50px 15% 100px;
-    background-color: #222034;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.page video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -1;
 }
 
 .about {
@@ -356,14 +370,13 @@ i {
     margin-right: 40px;
 }
 
-.row-card, .column-card-blue {
+.column-card-blue {
     transition: all 0.3s ease;
     position: relative;
 }
 
-.row-card:hover, .column-card-blue:hover {
+.column-card-blue:hover {
     transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 15px 35px rgba(100, 150, 255, 0.3);
     border: 1px solid rgba(99, 155, 255, 0.3);
 }
 
@@ -376,14 +389,13 @@ i {
     filter: drop-shadow(0 0 15px rgba(100, 150, 255, 0.3));
 }
 
-.column-card, .column-card img {
+.row-card, .column-card, .column-card img {
     transition: all 0.3s ease;
     position: relative;
 }
 
-.column-card:hover {
+.row-card:hover, .column-card:hover {
     transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -399,7 +411,6 @@ i {
 
 .column-card-purple:hover {
     transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 15px 35px rgba(180, 120, 255, 0.2);
     border: 1px solid rgba(180, 120, 255, 0.3);
 }
 
