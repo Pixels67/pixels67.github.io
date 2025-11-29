@@ -274,6 +274,7 @@ i {
     width: auto;
     height: auto;
     transform: translate(-50%, -50%);
+    filter: blur(4px);
     object-fit: cover;
     z-index: -1;
 }
