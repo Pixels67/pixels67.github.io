@@ -309,6 +309,22 @@ i {
     gap: 40px;
 }
 
+.tools {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.additional {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
 .row-card {
     display: flex;
     flex-direction: row;
@@ -351,6 +367,19 @@ i {
 }
 
 .column-card-purple {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background: rgba(240, 220, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 40px 80px 0 80px;
+}
+
+.column-card-orange {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -419,4 +448,19 @@ i {
 .column-card-purple:hover img {
     transform: scale(1.1);
     filter: drop-shadow(0 0 15px rgba(180, 120, 255, 0.2));
+}
+
+.column-card-orange, .column-card-orange img {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.column-card-orange:hover {
+    transform: translateY(-6px) scale(1.02);
+    border: 1px solid rgba(255, 120, 80, 0.3);
+}
+
+.column-card-orange:hover img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px rgba(255, 120, 80, 0.2));
 }
