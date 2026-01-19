@@ -387,7 +387,7 @@ i {
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    gap: 20px;
+    gap: 15px;
 }
 
 .project-title h3 {
@@ -400,7 +400,7 @@ i {
     background: rgba(100, 160, 255, 0.2);
     border: 2px solid rgba(100, 160, 255, 0.5);
     border-radius: 30px;
-    padding: 5px 15px 5px 15px;
+    padding: 2px 10px 2px 10px;
 }
 
 .green-tag {
@@ -409,7 +409,7 @@ i {
     background: rgba(100, 220, 140, 0.2);
     border: 2px solid rgba(100, 220, 140, 0.5);
     border-radius: 30px;
-    padding: 5px 15px 5px 15px;
+    padding: 2px 10px 2px 10px;
 }
 
 .red-tag {
@@ -418,7 +418,16 @@ i {
     background: rgba(255, 90, 110, 0.2);
     border: 2px solid rgba(255, 90, 110, 0.5);
     border-radius: 30px;
-    padding: 5px 15px 5px 15px;
+    padding: 2px 10px 2px 10px;
+}
+
+.yellow-tag {
+    color: rgba(220, 220, 110);
+    font-size: medium;
+    background: rgba(255, 255, 110, 0.2);
+    border: 2px solid rgba(255, 255, 110, 0.5);
+    border-radius: 30px;
+    padding: 2px 10px 2px 10px;
 }
 
 .row-card {
