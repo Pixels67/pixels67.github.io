@@ -1,6 +1,6 @@
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #0A0A0A;
+    background-color: rgb(10, 11, 11);
     color: rgb(253, 233, 205);
     margin: 0;
     overflow: auto;
@@ -270,7 +270,7 @@ i {
 .button:hover {
     transform: translateY(-2px);
     opacity: 0.8;
-    scale: 1.2;
+    scale: 1.1;
     color: #639bff;
 }
 
@@ -296,10 +296,22 @@ i {
     align-items: center;
     flex-direction: column;
     margin: 0;
-    padding-top: 100px;
+    padding-top: 110px;
     padding-bottom: 100px;
     font-family: 'Inter', sans-serif;
-    background-color: #0A0A0A;
+    z-index: -1;
+}
+
+.bg {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    width: auto;
+    height: 900px;
+    transform: translate(-50%, -50%);
+    filter: blur(8px) grayscale(80%) brightness(30%);
+    object-fit: cover;
+    z-index: -1;
 }
 
 .buttons {
@@ -314,7 +326,7 @@ i {
     padding: 50px 15% 0;
     position: relative;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(5, 5, 5, 0.85);
 }
 
 .page video {
@@ -326,10 +338,9 @@ i {
     width: auto;
     height: auto;
     transform: translate(-50%, -50%);
-    filter: blur(4px);
+    filter: blur(8px) grayscale(50%) brightness(50%);
     object-fit: cover;
     z-index: -1;
-    will-change: filter, transform;
 }
 
 .about {
@@ -438,7 +449,7 @@ i {
     gap: 80px;
     background: rgba(240, 220, 255, 0.1);
     backdrop-filter: blur(30px);
-    border: 1px solid rgba(255, 200, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     padding: 20px 35px;
     margin-top: 20px;
