@@ -377,6 +377,42 @@ i {
     gap: 40px;
 }
 
+.project-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+}
+
+.project-title h3 {
+    margin: 0;
+}
+
+.blue-tag {
+    font-size: medium;
+    background: rgba(100, 160, 255, 0.3);
+    border: 2px solid rgba(100, 160, 255, 0.5);
+    border-radius: 30px;
+    padding: 5px 15px 5px 15px;
+}
+
+.green-tag {
+    font-size: medium;
+    background: rgba(100, 220, 100, 0.3);
+    border: 2px solid rgba(100, 220, 100, 0.5);
+    border-radius: 30px;
+    padding: 5px 15px 5px 15px;
+}
+
+.red-tag {
+    font-size: medium;
+    background: rgba(255, 100, 100, 0.3);
+    border: 2px solid rgba(255, 100, 100, 0.5);
+    border-radius: 30px;
+    padding: 5px 15px 5px 15px;
+}
+
 .row-card {
     display: flex;
     flex-direction: row;
@@ -387,7 +423,7 @@ i {
     backdrop-filter: blur(30px);
     border: 1px solid rgba(255, 200, 255, 0.1);
     border-radius: 8px;
-    padding: 20px 40px;
+    padding: 20px 35px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
