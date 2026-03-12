@@ -34,7 +34,7 @@ class World {
 ```
 
 A *Resource* is like an ECS component but there is only one of it at any time.
-I use it things like the camera, audio listener, etc.
+I use it for things like the camera, audio listener, etc.
 I also use it for passing data into the ECS with things like the time state (time and delta time),
 and input (heldKeys, releasedKeys, etc.).
 
