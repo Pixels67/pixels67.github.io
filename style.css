@@ -25,6 +25,28 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #060606;
+    padding: 10px 0 10px 0;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+nav a {
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 5px 20px;
+    font-size: 1.2em;
+}
+
 .background {
     position: fixed;
     top: 50%;
