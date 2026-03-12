@@ -6,6 +6,15 @@ if (!post) {
 } else {
     document.title = post.title;
 
+    marked.use({
+        renderer: {
+            code(code, lang) {
+                const language = hljs.getLanguage(lang) ? lang : 'plaintext';
+                return `<pre><code class="hljs language-${language}">${hljs.highlight(code, {language}).value}</code></pre>`;
+            }
+        }
+    });
+
     fetch(post.file)
         .then(res => res.text())
         .then(md => {

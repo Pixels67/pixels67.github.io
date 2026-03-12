@@ -46,12 +46,6 @@ a {
     font-weight: bold;
 }
 
-pre {
-    background-color: var(--color-dark);
-    border-radius: var(--border-radius);
-    padding: 20px;
-}
-
 code {
     color: var(--color-green);
     background-color: var(--color-dark);
