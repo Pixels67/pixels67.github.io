@@ -102,7 +102,7 @@ enum class Stage {
     Update
 };
 
-class FLK_API Schedule {
+class Schedule {
     std::unordered_map<Stage, std::vector<System> > m_Systems;
 
 public:
@@ -122,7 +122,7 @@ that archives use, along with support for primitive types:
 
 ```cpp
 template<typename T>
-struct FLK_API Field {
+struct Field {
     std::string name;
     T *         value;
 
