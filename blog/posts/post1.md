@@ -190,6 +190,8 @@ Deserialization is the same but in reverse.
 
 And this week, I've finished basic physics simulation using the
 [ReactPhysics3D](https://github.com/DanielChappuis/reactphysics3d) library.
-I only implemented box and sphere colliders, but more types will come soon.
+I only implemented box and sphere colliders, but more types will come soon.  
+
+![Physics](resources/post1/physics.gif)  
 
 Stay tuned for updates and see you later!
